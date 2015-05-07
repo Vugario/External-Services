@@ -12,3 +12,16 @@
 */
 
 Route::get('/', 'WelcomeController@index');
+
+Route::post('/shipment_methods', 'ShipmentsController@index');
+Route::post('/shipment', 'ShipmentsController@create');
+Route::post('/payment_methods', 'PaymentsController@index');
+Route::post('/payment', 'PaymentsController@create');
+Route::get('/payment/pay/{id}/{status}', 'PaymentsController@update');
+Route::get('/payment/{id}', 'PaymentsController@show');
+
+// For testing
+Route::get('/shipment_methods', 'ShipmentsController@index');
+Route::get('/shipment', 'ShipmentsController@create');
+Route::get('/payment_methods', 'PaymentsController@index');
+Route::get('/payment', 'PaymentsController@create');
