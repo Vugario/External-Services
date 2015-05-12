@@ -4,13 +4,13 @@ use Illuminate\Database\Eloquent\Model;
 
 class Transaction extends Model {
 
-	public $timestamps = false;
-
     protected $fillable = [
+        'order_id',
         'status',
         'price_incl',
         'price_excl',
-        'tax_rate'
+        'tax_rate',
+        'redirect_url'
     ];
 
 }

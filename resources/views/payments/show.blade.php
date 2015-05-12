@@ -55,7 +55,7 @@
         <div class="title">Transaction #{{ $transaction->id }}</div>
         <div class="quote">
             <a href="{{ url('payment/pay/'.$transaction->id.'/paid') }}" class="yes">Yes I pay</a> -
-            <a href="{{ url('payment/pay/'.$transaction->id.'/unpaid') }}" class="no">No pay</a>
+            <a href="{{ url('payment/pay/'.$transaction->id.'/cancelled') }}" class="no">No pay</a>
         </div>
     </div>
 </div>

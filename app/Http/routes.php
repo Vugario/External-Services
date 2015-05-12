@@ -18,7 +18,8 @@ Route::post('/shipment', 'ShipmentsController@create');
 Route::post('/payment_methods', 'PaymentsController@index');
 Route::post('/payment', 'PaymentsController@create');
 Route::get('/payment/pay/{id}/{status}', 'PaymentsController@update');
-Route::get('/payment/{id}', 'PaymentsController@show');
+Route::get('/pay/{id}', 'PaymentsController@show');
+Route::get('/payment/{id}', 'PaymentsController@one');
 
 // For testing
 Route::get('/shipment_methods', 'ShipmentsController@index');
