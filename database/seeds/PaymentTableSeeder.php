@@ -19,6 +19,22 @@ class PaymentTableSeeder extends Seeder {
             'price_excl'    => 5.00,
             'tax_rate'      => 0.21
         ]);
+
+        \App\Payment::create([
+            'title'         => 'iDeal',
+            'icon'          => 'ideal',
+            'price_incl'    => 2.42,
+            'price_excl'    => 2.00,
+            'tax_rate'      => 0.21
+        ]);
+
+        \App\Payment::create([
+            'title'         => 'Mastercard',
+            'icon'          => 'mastercard',
+            'price_incl'    => 1.21,
+            'price_excl'    => 1.00,
+            'tax_rate'      => 0.21
+        ]);
     }
 
 }
