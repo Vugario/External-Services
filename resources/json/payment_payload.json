@@ -1,0 +1,45 @@
+{
+  "order":{
+    "id":2996178,
+    "number":"01918",
+    "price_incl":29.3400,
+    "price_excl":25.1200,
+    "price_tax":4.2200,
+    "currency":"eur"
+  },
+  "customer":{
+    "id":103,
+    "email":"info@seoshop.com",
+    "gender":"male",
+    "firstname":"Menno",
+    "middlename":"",
+    "lastname":"Wolvers",
+    "fulllastname":"Wolvers",
+    "fullname":"Menno Wolvers",
+    "phone":"",
+    "mobile":"",
+    "birthdate":"685144800",
+    "type":"private",
+    "company":"SEOshop",
+    "cocnumber":false,
+    "vatnumber":false
+  },
+  "payment_method":{
+    "id":"my-awesome-app",
+    "method":"pay-after-delivery",
+    "title":"Pay After Delivery - MyAwesomeApp",
+    "data":{
+      "gender":"male",
+      "phone":"02012345678",
+      "birthdate_d":"18",
+      "birthdate_m":"9",
+      "birthdate_y":"1991",
+      "terms":"1",
+      "method":"ideal",
+      "birthdate":"1991-9-18",
+      "app_id":"72"
+    }
+  },
+  "redirect_url":"http://domain.webshopapp.com/nl/payment/my-awesome-app/success/?order_id=2996178",
+  "webhook_url":"https://domain.webshopapp.com/nl/payment/my-awesome-app/notify/?order_id=2996178"
+}
