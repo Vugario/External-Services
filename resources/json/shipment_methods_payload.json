@@ -1,0 +1,72 @@
+{
+  "rate_estimate": false,
+  "shop": {
+    "id": 1,
+    "language": "nl",
+    "currency": "eur"
+  },
+  "customer": {
+    "firstname": "Menno",
+    "middlename": false,
+    "lastname": "Wolvers",
+    "phone": false,
+    "mobile": false,
+    "type": "private",
+    "company": ""
+  },
+  "billing_address": {
+    "name": "Menno Wolvers",
+    "company": "",
+    "address1": "Keizersgracht",
+    "address2": null,
+    "number": 313,
+    "extension": "",
+    "zipcode": "1016 EE",
+    "city": "Amsterdam",
+    "region": false,
+    "country": "nl"
+  },
+  "shipping_address": {
+    "name": "Menno Wolvers",
+    "company": "",
+    "address1": "Keizersgracht",
+    "address2": null,
+    "number": 313,
+    "extension": "",
+    "zipcode": "1016 EE",
+    "city": "Amsterdam",
+    "region": false,
+    "country": "nl"
+  },
+  "quote": {
+    "id": 1486,
+    "price_incl": "36.58",
+    "price_excl": "30.23",
+    "vat_shifted": false,
+    "weight": 110,
+    "volume": 200,
+    "colli": 2,
+    "products": [{
+      "product_id": 10546,
+      "variant_id": 17706,
+      "title": "Lamswollen sjaal",
+      "fulltitle": "Lamswollen sjaal",
+      "variant": null,
+      "description": "Een fijngebreide sjaal van lamswolmix met blokstrepen. Afmeting 35x185 cm.",
+      "price_incl": 36.58,
+      "price_excl": 30.23,
+      "tax_rate": 0.21,
+      "quantity": 2,
+      "article_code": null,
+      "ean": null,
+      "sku": "AC0002",
+      "size_x": 10,
+      "size_y": 10,
+      "size_z": 10,
+      "weight": 110,
+      "volume": 200,
+      "colli": 2,
+      "stock_available": true
+    }]
+  }
+}

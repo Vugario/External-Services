@@ -1,0 +1,217 @@
+body {
+  color: #494C4C;
+  padding-bottom: 350px;
+  -webkit-font-smoothing: antialiased; }
+
+.logo {
+  width: 84px;
+  height: 84px;
+  background: url(../images/glyph.png) no-repeat;
+  background-attachment: scroll;
+  background-image: -webkit-image-set(url(../images/glyph.png) 1x, url(../images/glyph@2x.png) 2x);
+  display: block;
+  float: left; }
+
+header {
+  background-color: #FFF;
+  border-bottom: 1px solid #E1E4E5;
+  padding: 12px 0;
+  margin-bottom: 24px; }
+  header > div {
+    max-width: 450px;
+    margin: 0 auto; }
+  header .title {
+    display: block;
+    font-size: 18px;
+    margin-top: 18px; }
+  header .slogan {
+    font-weight: normal;
+    font-size: 16px;
+    font-style: normal;
+    color: #ABB3B3; }
+  header .logo {
+    margin-right: 15px; }
+
+.intro {
+  text-align: center;
+  width: 100%;
+  max-width: 1210px;
+  height: 670px;
+  padding-top: 260px;
+  margin: 0 auto;
+  background: url(../images/introBG.png) no-repeat;
+  background-attachment: scroll;
+  background-image: -webkit-image-set(url(../images/introBG.png) 1x, url(../images/introBG@2x.png) 2x); }
+  .intro > p {
+    max-width: 600px;
+    margin: 0px auto 48px auto;
+    font-weight: normal;
+    font-size: 24px;
+    font-style: normal;
+    color: #ABB3B3; }
+  .intro h1 {
+    text-align: center;
+    font-weight: normal;
+    font-size: 48px;
+    color: #494C4C; }
+  .intro h2 {
+    text-align: center;
+    font-weight: normal;
+    font-size: 16px;
+    color: #ABB3B3;
+    margin: 0;
+    margin-top: 16px; }
+
+hr {
+  height: 1px;
+  display: block;
+  background: #E1E4E5;
+  border: 0; }
+
+.section {
+  max-width: 950px;
+  margin: 0 auto;
+  padding: 120px 0px;
+  font-weight: normal;
+  color: #ABB3B3;
+  line-height: 150%; }
+  .section h1 {
+    font-weight: normal;
+    font-size: 20px;
+    color: #494C4C;
+    margin: 0;
+    margin-bottom: 1em; }
+  .section p {
+    font-family: "proxima_nova_rgregular", "Proxima Nova", sans-serif;
+    font-weight: normal;
+    color: #ABB3B3;
+    line-height: 150%;
+    max-width: 480px; }
+
+.button {
+  background: #FFF;
+  height: 36px;
+  line-height: 20px;
+  border: 1px solid #ABB3B3;
+  padding: 6px 12px;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -o-border-radius: 3px;
+  transition: color 0.2s ease-in-out;
+  transition: border-color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out;
+  margin-top: 36px;
+  display: inline-block;
+  color: #ABB3B3;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: normal; }
+  .button + .button {
+    margin-left: 12px; }
+  .button:focus {
+    color: #ABB3B3;
+    text-decoration: none; }
+  .button:hover {
+    text-decoration: none;
+    color: #2BCDFC;
+    border-color: #2BCDFC; }
+
+.code {
+  float: right;
+  width: 450px; }
+  .code .header {
+    border-bottom: 1px solid #EEE;
+    padding-bottom: 10px; }
+  .code .request {
+    display: block;
+    float: left;
+    font-weight: bold;
+    font-size: 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #494C4C; }
+  .code .preview {
+    color: #2BCDFC;
+    font-weight: bold;
+    font-size: 12px;
+    opacity: 0.5;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-decoration: none;
+    transition: color 0.2s ease-in-out; }
+    .code .preview:hover {
+      color: #2775C6;
+      opacity: 1;
+      text-decoration: none; }
+  .code .payload {
+    margin-bottom: 75px; }
+  .code pre {
+    border-color: transparent;
+    border: 0;
+    font-size: 11px;
+    max-height: 250px;
+    overflow: hidden; }
+  .code .more {
+    color: #CCC;
+    display: block;
+    font-size: 11px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase; }
+  .code h2 {
+    font-size: 12px;
+    font-weight: bold;
+    color: #ABB3B3;
+    padding: 0;
+    margin: 20px 0 5px 0;
+    text-transform: uppercase; }
+  .code pre {
+    padding: 0; }
+
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+/* Tomorrow Comment */
+.hljs-comment {
+  color: #8e908c; }
+
+/* Tomorrow Red */
+.hljs-variable, .hljs-attribute, .hljs-tag, .hljs-regexp, .ruby .hljs-constant, .xml .hljs-tag .hljs-title, .xml .hljs-pi, .xml .hljs-doctype, .html .hljs-doctype, .css .hljs-id, .css .hljs-class, .css .hljs-pseudo {
+  color: #4271AE; }
+
+/* Tomorrow Orange */
+.hljs-number, .hljs-preprocessor, .hljs-pragma, .hljs-built_in, .hljs-literal, .hljs-params, .hljs-constant {
+  color: #f5871f; }
+
+/* Tomorrow Yellow */
+.ruby .hljs-class .hljs-title, .css .hljs-rule .hljs-attribute {
+  color: #eab700; }
+
+/* Tomorrow Green */
+.hljs-string, .hljs-value, .hljs-inheritance, .hljs-header, .hljs-name, .ruby .hljs-symbol, .xml .hljs-cdata {
+  color: #8E908C; }
+
+/* Tomorrow Aqua */
+.hljs-title, .css .hljs-hexcolor {
+  color: #3e999f; }
+
+/* Tomorrow Blue */
+.hljs-function, .python .hljs-decorator, .python .hljs-title, .ruby .hljs-function .hljs-title, .ruby .hljs-title .hljs-keyword, .perl .hljs-sub, .javascript .hljs-title, .coffeescript .hljs-title {
+  color: #4271ae; }
+
+/* Tomorrow Purple */
+.hljs-keyword, .javascript .hljs-function {
+  color: #8959a8; }
+
+.hljs {
+  display: block;
+  overflow-x: auto;
+  background: white;
+  color: #4d4d4c;
+  padding: 0.5em;
+  -webkit-text-size-adjust: none; }
+
+.coffeescript .javascript, .javascript .xml, .tex .hljs-formula, .xml .javascript, .xml .vbscript, .xml .css, .xml .hljs-cdata {
+  opacity: 0.5; }
+
+
+/*# sourceMappingURL=app.css.map */

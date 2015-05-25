@@ -11,16 +11,26 @@
 |
 */
 
-Route::get('/', 'WelcomeController@index');
+Route::get('/', 'AppController@home');
 
+// App installation
+Route::get('/install', 'AppController@install');
+Route::get('/uninstall', 'AppController@uninstall');
+Route::get('/cancel', 'AppController@cancel');
+
+// Shipping integration
 Route::post('/shipment_methods', 'ShipmentsController@index');
-Route::post('/shipment', 'ShipmentsController@create');
+
+// Payment service integration
 Route::post('/payment_methods', 'PaymentsController@index');
 Route::post('/payment', 'PaymentsController@create');
-Route::get('/payment/pay/{id}/{status}', 'PaymentsController@update');
 Route::get('/payment/{id}', 'PaymentsController@show');
 
-// For testing
+
+// Other routes
+Route::get('/payment/pay/{id}/{status}', 'PaymentsController@update');
+
+// For testing purposes
 Route::get('/shipment_methods', 'ShipmentsController@index');
 Route::get('/shipment', 'ShipmentsController@create');
 Route::get('/payment_methods', 'PaymentsController@index');

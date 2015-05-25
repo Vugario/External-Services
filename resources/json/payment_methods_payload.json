@@ -1,0 +1,69 @@
+{
+  "shop": {
+    "id": 1,
+    "language": "nl",
+    "currency": "eur"
+  },
+  "customer": {
+    "firstname": "Menno",
+    "middlename": "",
+    "lastname": "Wolvers",
+    "phone": "",
+    "mobile": "",
+    "type": "private",
+    "company": false
+  },
+  "billing_address": {
+    "name": "Menno Wolvers",
+    "company": false,
+    "address1": "Keizersgracht",
+    "address2": "",
+    "number": 313,
+    "extension": "",
+    "zipcode": "1016 EE",
+    "city": "Amsterdam",
+    "region": "",
+    "country": "nl"
+  },
+  "shipping_address": {
+    "name": "Menno Wolvers",
+    "company": null,
+    "address1": "Keizersgracht",
+    "address2": "",
+    "number": 313,
+    "extension": "",
+    "zipcode": "1016 EE",
+    "city": "Amsterdam",
+    "region": "",
+    "country": "nl"
+  },
+  "quote": {
+    "id": 1486,
+    "price_incl": 55.43,
+    "price_excl": 45.81,
+    "vat_shifted": false,
+    "weight": 165,
+    "volume": 300,
+    "colli": 3,
+    "products": [{
+      "product_id": 10546,
+      "variant_id": 17706,
+      "title": "Lamswollen sjaal",
+      "fulltitle": "Lamswollen sjaal",
+      "variant": "",
+      "price_incl": 49.38,
+      "price_excl": 40.81,
+      "tax_rate": 0.21,
+      "quantity": 3,
+      "article_code": "",
+      "ean": "",
+      "sku": "AC0002",
+      "size_x": 10,
+      "size_y": 10,
+      "size_z": 10,
+      "weight": 55,
+      "volume": 100,
+      "colli": 1
+    }]
+  }
+}
