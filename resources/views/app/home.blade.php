@@ -140,7 +140,10 @@
 
     <p>We have set up a demo shop with this external service integrated. The methods as seen in the request <a href="{{ url('shipment_methods') }}">/shipment_methods</a> and <a href="{{ url('payment_methods') }}">/payment_methods</a> will show up in the checkout.</p>
     <p>Try ordering something with the SEOcoin payment method and see how we redirect the user, and back.</p>
-    <p><a class="button" href="http://hidde.webshopapp.net" target="_blank">Give it a spin</a></p>
+    <p>
+        <a class="button" href="http://hidde.webshopapp.net" target="_blank">Give it a spin</a>
+        <a class="button" href="" target="_blank">Check the code</a>
+    </p>
 </div>
 
 @endsection()

@@ -1,27 +1,12 @@
-## Laravel PHP Framework
+## External Services
+You can now integrate your shipping and payment services into our worldwide e-commerce platform.
 
-[![Build Status](https://travis-ci.org/laravel/framework.svg)](https://travis-ci.org/laravel/framework)
-[![Total Downloads](https://poser.pugx.org/laravel/framework/d/total.svg)](https://packagist.org/packages/laravel/framework)
-[![Latest Stable Version](https://poser.pugx.org/laravel/framework/v/stable.svg)](https://packagist.org/packages/laravel/framework)
-[![Latest Unstable Version](https://poser.pugx.org/laravel/framework/v/unstable.svg)](https://packagist.org/packages/laravel/framework)
-[![License](https://poser.pugx.org/laravel/framework/license.svg)](https://packagist.org/packages/laravel/framework)
+### How to get started
+We have multiple tutorials ready for you to dive into and create your own integration. [Create a shipping integration](http://developers.webshopapp.net/api/tutorials/create-a-shipping-integration) or [Create a payment service integration](http://developers.webshopapp.net/api/tutorials/create-a-payment-service-integration).
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable, creative experience to be truly fulfilling. Laravel attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as authentication, routing, sessions, queueing, and caching.
+### Online preview
+We have a demo webshop with a sample external service integration. Buy a product and choose for "1 hour delivery" and "SEOcoin" in te checkout to see how the external service flow would go. [Open the demo webshop](http://hidde.webshopapp.net/)
 
-Laravel is accessible, yet powerful, providing powerful tools needed for large, robust applications. A superb inversion of control container, expressive migration system, and tightly integrated unit testing support give you the tools you need to build any application with which you are tasked.
-
-## Official Documentation
-
-Documentation for the framework can be found on the [Laravel website](http://laravel.com/docs).
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](http://laravel.com/docs/contributions).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell at taylor@laravel.com. All security vulnerabilities will be promptly addressed.
-
-### License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT)
+### More information
+We have much more information about the integration and the technical details to get you started.
+[See more info right here](https://apps.prototypje.com)
