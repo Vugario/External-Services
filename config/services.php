@@ -15,8 +15,8 @@ return [
     */
 
     'seoshop' => [
-        'key'    => '9df09e9a0eb9456ff8da0a97f0c0616b',
-        'secret' => 'f96b6cee12593ce3b35ae8d529eb1f48'
+        'key'    => env('SEOSHOP_KEY', false),
+        'secret' => env('SEOSHOP_SECRET', false)
     ]
 
 ];

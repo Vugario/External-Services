@@ -6,6 +6,8 @@
     <p>Connect your shipping or payment service with the SEOshop platform.</p>
     <a href="http://developers.webshopapp.net/api/tutorials/create-a-shipping-integration" target="_blank" class="btn btn-lg btn-default">Shipping service</a>
     <a href="http://developers.webshopapp.net/api/tutorials/create-a-payment-service-integration" target="_blank" class="btn btn-lg btn-default">Payment service</a>
+
+    <a class="muted" href="#give-it-a-spin">Give it a spin</a>
 </div>
 
 <hr />
@@ -127,6 +129,18 @@
     <p>When the payment has been cancelled we give the customer the option to choose another payment method. At this point we'll call your endpoint again to fetch the available payment methods and the cycle may repeat itself.</p>
 
     <p>If the order has been paid or unpaid we send the customer to the thank you page. The order has now been completed. In this case we see unpaid as may-be-paid-later. If this is not the case then send us the status cancelled so we can let the customer pay again through another payment method.</p>
+</div>
+
+<hr />
+
+<div class="section clearfix">
+    <img src="{{ asset('images/Bitmap2x.png') }}" width="271" alt="" class="pull-right">
+
+    <h1 id="give-it-a-spin">Give it a spin</h1>
+
+    <p>We have set up a demo shop with this external service integrated. The methods as seen in the request <a href="{{ url('shipment_methods') }}">/shipment_methods</a> and <a href="{{ url('payment_methods') }}">/payment_methods</a> will show up in the checkout.</p>
+    <p>Try ordering something with the SEOcoin payment method and see how we redirect the user, and back.</p>
+    <p><a class="button" href="http://hidde.webshopapp.net" target="_blank">Give it a spin</a></p>
 </div>
 
 @endsection()

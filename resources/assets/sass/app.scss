@@ -66,6 +66,22 @@ header {
     margin: 0;
     margin-top: 16px;
   }
+
+  .muted {
+    color: #2BCDFC;
+    display: block;
+    letter-spacing: 1px;
+    font-size: 12px;
+    font-weight: bold;
+    margin-top: 48px;
+    text-transform: uppercase;
+    transition: color 0.2s ease-in-out;
+
+    &:hover, &:focus {
+      color: #2775C6;
+      text-decoration: none;
+    }
+  }
 }
 
 hr {
