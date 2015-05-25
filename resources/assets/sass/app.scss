@@ -21,25 +21,13 @@ header {
   margin-bottom: 24px;
 
   > div {
-    max-width: 450px;
+    max-width: 470px;
     margin: 0 auto ;
   }
 
-  .title {
-    display: block;
-    font-size: 18px;
-    margin-top: 18px;
-  }
-
-  .slogan {
-    font-weight: normal;
-    font-size: 16px;
-    font-style: normal;
-    color: #ABB3B3;
-  }
-
   .logo {
-    margin-right: 15px;
+    float: none;
+    margin: 5px auto 0;
   }
 }
 
@@ -47,10 +35,10 @@ header {
   text-align: center;
   width: 100%;
   max-width: 1210px;
-  height: 670px;
-  padding-top: 260px;
+  height: 370px;
+  padding-top: 100px;
   margin: 0 auto;
-  background: url(../images/introBG.png) no-repeat;
+  background: url(../images/introBG.png) no-repeat center center;
   background-attachment: scroll;
   background-image: -webkit-image-set(url(../images/introBG.png) 1x, url(../images/introBG@2x.png) 2x);
 
@@ -160,6 +148,29 @@ hr {
   }
 }
 
+.btn {
+  &.btn-default {
+    border-color: #ABB3B3;
+    border-width: 2px;
+    color: #ABB3B3;
+    font-size: 20px;
+    line-height: 17px;
+    letter-spacing: 1.5px;
+    padding: 18px 24px;
+    text-transform: uppercase;
+    transition: background .5s ease-out;
+
+    &:hover {
+      background: #ABB3B3;
+      color: #FFF;
+    }
+
+    &+.btn-default {
+      margin-left: 24px;
+    }
+  }
+}
+
 .code {
   float: right;
   width: 450px;
@@ -232,6 +243,32 @@ hr {
 
   pre {
     padding: 0;
+  }
+}
+
+/* Mobile fixes */
+@media (max-width: 991px) {
+  .section {
+    padding-left: 15px;
+    padding-right: 15px;
+
+    h1 {
+      text-align: center;
+    }
+    > p {
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+    }
+  }
+
+  .intro {
+    .btn {
+      &.btn-default {
+        margin-left: 0px;
+        margin-bottom: 24px;
+      }
+    }
   }
 }
 

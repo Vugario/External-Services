@@ -3,16 +3,16 @@
 @section('content')
 
 <div class="intro">
-    <p>Connect your shipping or payment service with the SEOshop platform and offer your services to thousands of webshops with a single integration!</p>
-    <a href="http://developers.webshopapp.net/api/tutorials/create-a-shipping-integration" target="_blank" class="button">Build a shipping integration</a>
-    <a href="http://developers.webshopapp.net/api/tutorials/create-a-payment-service-integration" target="_blank" class="button">Build a payment service integration</a>
+    <p>Connect your shipping or payment service with the SEOshop platform.</p>
+    <a href="http://developers.webshopapp.net/api/tutorials/create-a-shipping-integration" target="_blank" class="btn btn-lg btn-default">Shipping service</a>
+    <a href="http://developers.webshopapp.net/api/tutorials/create-a-payment-service-integration" target="_blank" class="btn btn-lg btn-default">Payment service</a>
 </div>
 
 <hr />
 
 <div class="section clearfix">
     <h1 id="how-we-fetch-shipment-methods">How we fetch shipment methods</h1>
-    <div class="code">
+    <div class="code visible-lg visible-md">
         <div class="header clearfix">
             <a href="{{ url('shipment_methods') }}" target="_blank" class="preview pull-right">Live example</a>
             <span class="request">POST /shipment_methods</span>
@@ -35,7 +35,9 @@
 
     <p>Now you'll respond with a valid json document that contains a field <code>shipment_methods</code>. This field is an array with all available shipment methods.</p>
 
-    <p>There are two types of payloads, depending on the <code>rate_estimate</code> field. When this field states true, we do not have much customer information yet and are simply asking for a fare estimate of the shipping methods. This request is performed in the shopping cart. When the field states false, we will send you much more information. <a href="http://developers.webshopapp.net/api/tutorials/create-a-shipping-integration#rate-estimate-call" target="_blank">Read more on the rate estimate call</a>.</p>
+    <p>There are two types of payloads, depending on the <code>rate_estimate</code> field. When this field states true, we do not have much customer information yet and are simply asking for a fare estimate of the shipping methods. This request is performed in the shopping cart. When the field states false, we will send you much more information.</p>
+
+    <p><a href="http://developers.webshopapp.net/api/tutorials/create-a-shipping-integration#rate-estimate-call" target="_blank">Read more on the rate estimate call</a>.</p>
 
     <p>Unlike with the payment service integration, we will not send you a call when one of your shipment methods has been chosen. Instead you can hook into the order creation event (See <a href="http://developers.webshopapp.net/api/tutorials/webhooks" target="_blank">webhooks</a>) to see if your service has been chosen.</p>
 </div>
@@ -44,7 +46,7 @@
 
 <div class="section clearfix">
     <h1 id="how-we-fetch-payment-methods">How we fetch payment methods</h1>
-    <div class="code">
+    <div class="code visible-lg visible-md">
         <div class="header clearfix">
             <a href="{{ url('payment_methods') }}" target="_blank" class="preview pull-right">Live example</a>
             <span class="request">POST /payment_methods</span>
@@ -67,14 +69,16 @@
 
     <p>Now you'll respond with a valid json document that contains a field <code>payment_methods</code>. This field is an array with all available payment methods. Each payment method must consist of a unique identifier, a title, an icon, and a price.</p>
 
-    <p>When one of your payment methods has been chosen and the checkout is finished, we'll call your endpoint again. <a href="#the-payment-process">Read more about the payment process</a>.</p>
+    <p>When one of your payment methods has been chosen and the checkout is finished, we'll call your endpoint again.</p>
+
+    <p><a href="#the-payment-process">Read more about the payment process</a>.</p>
 </div>
 
 <hr />
 
 <div class="section clearfix">
     <h1 id="the-payment-process">The payment process</h1>
-    <div class="code">
+    <div class="code visible-lg visible-md">
         <div class="header clearfix">
             <span class="request">POST /payment</span>
         </div>
@@ -104,7 +108,7 @@
 <div class="section clearfix">
     <h1 id="verify-the-payment-status">Verify the payment status</h1>
 
-    <div class="code">
+    <div class="code visible-lg visible-md">
         <div class="header clearfix">
             <a href="{{ url('payment/3161') }}" target="_blank" class="preview pull-right">Live example</a>
             <span class="request">GET /payment/{order_id}</span>

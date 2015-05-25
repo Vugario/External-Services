@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex, nofollow">
     <title>SEOshop External Services</title>
 
     <!-- Bootstrap -->
@@ -22,8 +23,6 @@
     <header>
         <div class="clearfix">
             <div class="logo"></div>
-            <strong class="title">SEOshop External Services</strong>
-            <em class="slogan">A sample shipping and payment service integration.</em>
         </div>
     </header>
 
