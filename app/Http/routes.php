@@ -24,11 +24,12 @@ Route::post('/shipment_methods', 'ShipmentsController@index');
 // Payment service integration
 Route::post('/payment_methods', 'PaymentsController@index');
 Route::post('/payment', 'PaymentsController@create');
-Route::get('/payment/{id}', 'PaymentsController@show');
+Route::get('/payment/{id}', 'PaymentsController@one');
 
 
 // Other routes
 Route::get('/payment/pay/{id}/{status}', 'PaymentsController@update');
+Route::get('/pay/{id}', 'PaymentsController@show');
 
 // For testing purposes
 Route::get('/shipment_methods', 'ShipmentsController@index');
