@@ -142,7 +142,7 @@
     <p>Try ordering something with the SEOcoin payment method and see how we redirect the user, and back.</p>
     <p>
         <a class="button" href="http://hidde.webshopapp.net" target="_blank">Give it a spin</a>
-        <a class="button" href="" target="_blank">Check the code</a>
+        <a class="button" href="https://github.com/Vugario/External-Services" target="_blank">Check the code</a>
     </p>
 </div>
 
