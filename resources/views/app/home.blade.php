@@ -10,6 +10,39 @@
     <a class="muted" href="#give-it-a-spin">Give it a spin</a>
 </div>
 
+<hr style="margin-top: 0;" />
+
+<div class="section clearfix">
+    <h1 id="how-we-fetch-shipment-methods">How to get started</h1>
+    <div class="code visible-lg visible-md">
+        <div class="header clearfix">
+            <span class="request">POST /external_services.json</span>
+        </div>
+
+        <h2>Your payload</h2>
+        <div class="payload">
+            <pre><code class="json">{{ App\Helpers\Code::payload('external_services') }}</code></pre>
+        </div>
+
+        <h2>PHP sample</h2>
+        <div class="payload">
+            <pre><code class="php">{{ App\Helpers\Code::example('external_services') }}</code></pre>
+        </div>
+    </div>
+
+    <p>
+        We will call your endpoint during the checkout process. First you'll have to send us your endpoint information. Do this by calling our <code>/external_services.json</code> endpoint.
+    </p>
+
+    <p>A external service can either be a shipment or a payment service. If you'd like to offer both simply create two external services, each with a different type. The endpoint must be accessible over HTTPS. The <code>rateEstimate</code> field is only applicable for shipment services. <a href="#how-we-fetch-shipment-methods">Read more about that here</a>.</p>
+
+    <p>Please note that a external service is unique per shop. So for every shop that wants to use your service you'll have to create a new external service.</p>
+
+    <p>Our PHP client supports the external service resource and makes it super easy to use. <a href="http://developers.webshopapp.net/api/libraries/php-client" target="_blank">Learn more about the PHP client</a>.</p>
+
+    <p><a href="http://developers.webshopapp.net/api/tutorials/create-a-shipping-integration" target="_blank">A more detailed tutorial is available right here</a>.</p>
+</div>
+
 <hr />
 
 <div class="section clearfix">

@@ -12,7 +12,7 @@ class Code
     {
         if (preg_match('/^([a-zA-Z0-9\_]+)$/', $file))
         {
-            return file_get_contents(base_path().'/resources/json/'.$file.'_payload.json');
+            return file_get_contents(base_path().'/resources/examples/'.$file.'_payload.json');
         }
 
         return 'Incorrect filename';
@@ -28,7 +28,23 @@ class Code
     {
         if (preg_match('/^([a-zA-Z0-9\_]+)$/', $file))
         {
-            return file_get_contents(base_path().'/resources/json/'.$file.'_response.json');
+            return file_get_contents(base_path().'/resources/examples/'.$file.'_response.json');
+        }
+
+        return 'Incorrect filename';
+    }
+
+    /**
+     * Fetch a PHP example
+     *
+     * @param $file
+     * @return string
+     */
+    public static function example($file)
+    {
+        if (preg_match('/^([a-zA-Z0-9\_]+)$/', $file))
+        {
+            return file_get_contents(base_path().'/resources/examples/'.$file.'_example.php');
         }
 
         return 'Incorrect filename';

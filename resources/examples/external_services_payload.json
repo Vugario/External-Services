@@ -1,0 +1,9 @@
+{
+  "externalService": {
+    "type": "shipment",
+    "name": "SEOshop Shipments",
+    "urlEndpoint": "https://api.yourdomain.com/",
+    "rateEstimate": true,
+    "isActive": true
+  }
+}

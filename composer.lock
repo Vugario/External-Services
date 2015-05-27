@@ -1,10 +1,10 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "24c3946acc997e3f3eca7fc5c99585b2",
+    "hash": "dc4bfd80dea3c0aea89ac165316bc69b",
     "packages": [
         {
             "name": "classpreloader/classpreloader",
@@ -934,6 +934,51 @@
                 "shell"
             ],
             "time": "2015-03-26 18:43:54"
+        },
+        {
+            "name": "seoshop/seoshop-php",
+            "version": "v1.6.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/SEOshop/API-PHP-Client.git",
+                "reference": "97ea2f5a6f6ed9eea4f0051c2673080cfb410d00"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/SEOshop/API-PHP-Client/zipball/97ea2f5a6f6ed9eea4f0051c2673080cfb410d00",
+                "reference": "97ea2f5a6f6ed9eea4f0051c2673080cfb410d00",
+                "shasum": ""
+            },
+            "require": {
+                "ext-curl": "*",
+                "ext-json": "*",
+                "ext-mbstring": "*",
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "src/WebshopappApiClient.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "SEOshop and contributors",
+                    "homepage": "https://github.com/SEOshop/API-PHP-Client/contributors"
+                }
+            ],
+            "description": "PHP client for the SEOshop API",
+            "homepage": "http://developers.seoshop.com",
+            "keywords": [
+                "api",
+                "client",
+                "php"
+            ],
+            "time": "2015-04-29 14:23:57"
         },
         {
             "name": "swiftmailer/swiftmailer",

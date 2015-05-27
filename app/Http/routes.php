@@ -26,6 +26,11 @@ Route::post('/payment_methods', 'PaymentsController@index');
 Route::post('/payment', 'PaymentsController@create');
 Route::get('/payment/{id}', 'PaymentsController@one');
 
+// Authenticated routes
+Route::group(['middleware' => ['auth']], function()
+{
+    Route::get('/dashboard', 'AppController@dashboard');
+});
 
 // Other routes
 Route::get('/payment/pay/{id}/{status}', 'PaymentsController@update');

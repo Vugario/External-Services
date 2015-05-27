@@ -15,6 +15,7 @@ return [
     */
 
     'seoshop' => [
+        'env'    => env('SEOSHOP_ENV', 'live'),
         'key'    => env('SEOSHOP_KEY', false),
         'secret' => env('SEOSHOP_SECRET', false)
     ]
