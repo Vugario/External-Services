@@ -28,8 +28,10 @@ class AppController extends Controller {
     public function dashboard()
     {
         $externalServices = Webshop::instance()->external_services->get();
+        $shopInformation  = Webshop::instance()->shop->get();
 
         return view('app/dashboard', [
+            'shop'              => $shopInformation,
             'external_services' => $externalServices
         ]);
     }
