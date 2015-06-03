@@ -51,7 +51,7 @@ class Webshop extends \WebshopappApiClient
         {
             Webshop::instance()->external_services->create([
                 'type'          => 'shipment',
-                'name'          => 'SEOshop Shipments',
+                'name'          => 'My Awesome Shipping Service',
                 'urlEndpoint'   => url('/', [], true),
                 'rateEstimate'  => true,
                 'isActive'      => true
@@ -62,7 +62,7 @@ class Webshop extends \WebshopappApiClient
         {
             Webshop::instance()->external_services->create([
                 'type'          => 'payment',
-                'name'          => 'SEOshop Payments',
+                'name'          => 'My Awesome Payment Service',
                 'urlEndpoint'   => url('/', [], true),
                 'isActive'      => true
             ]);
