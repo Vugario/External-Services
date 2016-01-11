@@ -56,7 +56,7 @@ class AppController extends Controller {
 
         // Validate the signature
         $signature  = '';
-        $input      = $request->except('signature');
+        $input      = $request->only(['language', 'shop_id', 'timestamp', 'token']);
 
         ksort($input);
 
