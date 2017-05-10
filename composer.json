@@ -5,12 +5,14 @@
 	"license": "MIT",
 	"type": "project",
 	"require": {
-		"laravel/framework": "5.0.*",
-		"seoshop/seoshop-php": "^1.6"
+		"laravel/framework": "5.4.*",
+		"seoshop/seoshop-php": "^1.8"
 	},
 	"require-dev": {
-		"phpunit/phpunit": "~4.0",
-		"phpspec/phpspec": "~2.1"
+		"phpunit/phpunit": "~5.7",
+		"phpspec/phpspec": "~2.1",
+		"symfony/dom-crawler": "3.1.*",
+		"symfony/css-selector": "~3.0" 
 	},
 	"autoload": {
 		"classmap": [
@@ -32,7 +34,10 @@
 		],
 		"post-update-cmd": [
 			"php artisan clear-compiled",
-			"php artisan optimize"
+			"php artisan optimize",
+			"php artisan view:clear",
+			"php artisan route:clear",
+			"php artisan config:clear"
 		],
 		"post-create-project-cmd": [
 			"php -r \"copy('.env.example', '.env');\"",
